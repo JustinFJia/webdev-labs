@@ -11,14 +11,39 @@ Add some style blocks below this line to style the cards.
 Feel free to borrow from Exercise 1.
 */
 
+h2, p, button {
+    margin: 5%;
+    font-family: 'Montserrat', sans-serif;
+}
+section {
+    display: inline-block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(200,194,194);
+    width: 20vw;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+img {
+    width: 100%;
+    overflow: hidden
+}
 
 /* Tablet Media Query */
 @media only screen and (max-width: 1000px) {
-
+    main {
+        flex-wrap: wrap;
+    }
+    section {
+        width: calc(50% - 20px);
+    }
 }
 
 /* Mobile Phone Media Query */
 @media only screen and (max-width: 600px) {
-
+    section {
+        width: 100%;
+    }
     
 }
